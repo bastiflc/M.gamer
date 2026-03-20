@@ -1,0 +1,56 @@
+{
+  "name": "mundogamer",
+  "version": "1.0.0",
+  "description": "Aplicación de escritorio para MundoGamer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "publish": "electron-builder build --publish always"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bastiflc/M.gamer.git"
+  },
+  "keywords": [
+    "gaming",
+    "Mundogamer"
+  ],
+  "author": "Delobo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bastiflc/M.gamer/issues"
+  },
+  "homepage": "https://github.com/bastiflc/M.gamer#readme",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^41.0.3",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "electron-updater": "^6.8.3"
+  },
+  "build": {
+    "appId": "com.mundogamer.app",
+    "productName": "MundoGamer",
+    "copyright": "Copyright © 2026",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "icono.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "bastiflc",
+        "repo": "M.gamer"
+      }
+    ]
+  }
+}
