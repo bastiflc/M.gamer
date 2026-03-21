@@ -6,6 +6,7 @@ function createWindow() {
   const win = new BrowserWindow({
     width: 1200,
     height: 800,
+	title: "Mundo Gamer Xtreme",
     icon: path.join(__dirname, 'icono.png'),
     webPreferences: {
       nodeIntegration: false,
@@ -14,7 +15,8 @@ function createWindow() {
     }
   });
 
-  win.loadURL('https://sites.google.com/view/consolasdelobo');
+  win.loadURL('https://sites.google.com/view/mundogamerxtreme');
+  win.on('page-title-updated', (e) => e.preventDefault());
   win.setMenu(null);
 
   // --- 2. CONFIGURACIÓN DEL AUTO-UPDATER ---
