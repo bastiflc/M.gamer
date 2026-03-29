@@ -1,6 +1,6 @@
 {
   "name": "mundogamer",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Aplicación de escritorio para MundoGamer",
   "main": "main.js",
   "scripts": {
@@ -32,7 +32,7 @@
   },
   "build": {
     "appId": "com.mundogamer.app",
-    "productName": "MundoGamer",
+    "productName": "Mundo Gamer Xtreme",
     "copyright": "Copyright © 2026",
     "directories": {
       "output": "dist"
