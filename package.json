@@ -1,6 +1,6 @@
 {
   "name": "mundogamer",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Aplicación de escritorio para MundoGamer",
   "main": "main.js",
   "scripts": {
