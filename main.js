@@ -1,1 +1,293 @@
-const a0_0x1263e2=a0_0xdf16;(function(_0x280442,_0x2ec2da){const _0x5ad00b=a0_0xdf16,_0x138fb7=_0x280442();while(!![]){try{const _0x227763=parseInt(_0x5ad00b(0x103))/0x1*(-parseInt(_0x5ad00b(0x11d))/0x2)+parseInt(_0x5ad00b(0x104))/0x3+-parseInt(_0x5ad00b(0xf4))/0x4+parseInt(_0x5ad00b(0xed))/0x5*(-parseInt(_0x5ad00b(0xeb))/0x6)+-parseInt(_0x5ad00b(0x108))/0x7*(parseInt(_0x5ad00b(0xe3))/0x8)+-parseInt(_0x5ad00b(0x10b))/0x9+parseInt(_0x5ad00b(0xf6))/0xa;if(_0x227763===_0x2ec2da)break;else _0x138fb7['push'](_0x138fb7['shift']());}catch(_0x11be48){_0x138fb7['push'](_0x138fb7['shift']());}}}(a0_0x3119,0xad9fb));const {app,BrowserWindow,ipcMain,shell}=require('electron'),path=require(a0_0x1263e2(0x112)),{autoUpdater}=require(a0_0x1263e2(0xf9));process['platform']==='win32'&&app['setAppUserModelId']('com.mundogamer.app');let mainWindow,musicWindow,splashWindow,currentMusicUrl='',adShownInThisSession=![];function createMusicPlayer(){const _0x4ed69d=a0_0x1263e2;musicWindow=new BrowserWindow({'show':![],'webPreferences':{'nodeIntegration':!![],'contextIsolation':![]}}),musicWindow[_0x4ed69d(0x11b)](_0x4ed69d(0x10a));}function createSplashScreen(){const _0x217f43=a0_0x1263e2;splashWindow=new BrowserWindow({'width':0x1f4,'height':0x190,'frame':![],'transparent':!![],'alwaysOnTop':!![],'backgroundColor':_0x217f43(0x113),'icon':path[_0x217f43(0x110)](__dirname,'icono.png'),'webPreferences':{'nodeIntegration':![],'contextIsolation':!![]}});const _0x47b28b=_0x217f43(0xea);splashWindow[_0x217f43(0x11b)](_0x217f43(0x128)+_0x47b28b+_0x217f43(0xf0)),splashWindow[_0x217f43(0x102)](_0x217f43(0x10c),()=>{const _0x5ead8a=_0x217f43;splashWindow[_0x5ead8a(0x11e)]();});}function createWindow(){const _0x5e02a8=a0_0x1263e2;mainWindow=new BrowserWindow({'width':0x4b0,'height':0x320,'title':_0x5e02a8(0xe6),'icon':path[_0x5e02a8(0x110)](__dirname,'icono.png'),'show':![],'backgroundColor':'#000000','webPreferences':{'nodeIntegration':![],'contextIsolation':!![],'preload':path[_0x5e02a8(0x110)](__dirname,_0x5e02a8(0xfe)),'webSecurity':![]}}),mainWindow[_0x5e02a8(0x127)][_0x5e02a8(0x107)](({url:_0x5f5895})=>{const _0x35b6df=_0x5e02a8;return{'action':_0x35b6df(0xff),'overrideBrowserWindowOptions':{'autoHideMenuBar':!![],'webPreferences':{'nodeIntegration':![],'contextIsolation':!![]}}};}),mainWindow[_0x5e02a8(0x127)]['on'](_0x5e02a8(0x111),_0x3282f0=>{const _0x11f350=_0x5e02a8;_0x3282f0[_0x11f350(0xfa)](null),_0x3282f0['webContents']['on']('did-finish-load',()=>{const _0x20af82=_0x11f350;_0x3282f0['webContents'][_0x20af82(0x119)](_0x20af82(0x129));});}),mainWindow[_0x5e02a8(0x127)]['setWindowOpenHandler'](({url:_0x83c1a6})=>{const _0x8afa11=_0x5e02a8;return{'action':_0x8afa11(0xff),'overrideBrowserWindowOptions':{'autoHideMenuBar':!![],'webPreferences':{'nodeIntegration':![],'contextIsolation':!![]}}};});function _0x161e5f(_0x1a96a8){const _0x1ff36e=_0x5e02a8;_0x1a96a8['setMenu'](null),_0x1a96a8[_0x1ff36e(0x127)]['on'](_0x1ff36e(0xe2),()=>{const _0x2f5bea=_0x1ff36e;_0x1a96a8[_0x2f5bea(0x127)][_0x2f5bea(0x119)](_0x2f5bea(0xf8));}),_0x1a96a8[_0x1ff36e(0x127)]['on'](_0x1ff36e(0x111),_0x3938ad=>{_0x161e5f(_0x3938ad);});}mainWindow[_0x5e02a8(0x127)]['on'](_0x5e02a8(0x111),_0x996c62=>{_0x161e5f(_0x996c62);}),mainWindow['webContents'][_0x5e02a8(0xe1)]['on'](_0x5e02a8(0x109),(_0x2c9845,_0x1c0c48)=>{const _0x2b7820=_0x5e02a8;_0x1c0c48['on'](_0x2b7820(0x11c),(_0x662ad5,_0x3bf882)=>{const _0x17b400=_0x2b7820;if(mainWindow&&!mainWindow[_0x17b400(0xe9)]()){if(_0x3bf882==='progressing'){const _0x19c82c=_0x1c0c48[_0x17b400(0x114)](),_0x7a79d3=_0x1c0c48[_0x17b400(0x10e)](),_0x5b7dc1=_0x19c82c>0x0?Math[_0x17b400(0x10f)](_0x7a79d3/_0x19c82c*0x64):0x0;mainWindow[_0x17b400(0x127)][_0x17b400(0xfb)](_0x17b400(0x121),{'percent':_0x5b7dc1});}}}),_0x1c0c48[_0x2b7820(0x102)](_0x2b7820(0x120),(_0x274215,_0x483276)=>{const _0x18ed13=_0x2b7820;mainWindow&&!mainWindow[_0x18ed13(0xe9)]()&&mainWindow[_0x18ed13(0x127)]['send'](_0x18ed13(0x12b),{'state':_0x483276});});});const _0x2b316c=Buffer[_0x5e02a8(0xf1)]('aHR0cHM6Ly93d3cubXVuZG9nYW1leHRyZW1lLm5ldC5wZQ==',_0x5e02a8(0xfd))[_0x5e02a8(0xf3)](_0x5e02a8(0x118));mainWindow[_0x5e02a8(0x11b)](_0x2b316c),mainWindow['on']('page-title-updated',_0x583263=>_0x583263['preventDefault']()),mainWindow['setMenu'](null),mainWindow['webContents']['on']('did-start-navigation',()=>{const _0x2924fd=_0x5e02a8;mainWindow[_0x2924fd(0x127)][_0x2924fd(0x119)](_0x2924fd(0x125));}),mainWindow[_0x5e02a8(0x127)]['on'](_0x5e02a8(0xe2),()=>{const _0x227a8e=_0x5e02a8;mainWindow['webContents'][_0x227a8e(0x119)]('\x0a\x20\x20\x20\x20\x20\x20html,\x20body\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20auto\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20scrollbar-width:\x20none\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20'),!adShownInThisSession&&setTimeout(()=>{showGlobalAd(mainWindow),adShownInThisSession=!![];},0x1388);}),mainWindow[_0x5e02a8(0x102)](_0x5e02a8(0x10c),()=>{const _0x378818=_0x5e02a8;if(splashWindow&&!splashWindow[_0x378818(0xe9)]())splashWindow['close']();mainWindow['show']();}),mainWindow['on'](_0x5e02a8(0x105),()=>{const _0xa4ab92=_0x5e02a8;if(musicWindow)musicWindow[_0xa4ab92(0xfc)]();mainWindow=null;}),autoUpdater[_0x5e02a8(0x11f)](),autoUpdater['on'](_0x5e02a8(0x117),()=>{const _0x2f30f3=_0x5e02a8;mainWindow&&!mainWindow[_0x2f30f3(0xe9)]()&&mainWindow[_0x2f30f3(0x127)]['send'](_0x2f30f3(0x117));});}function showGlobalAd(_0x5cf41b){const _0x4c5a96=a0_0x1263e2,_0x540e48=_0x4c5a96(0x100),_0x2b7d61=_0x4c5a96(0x116)+_0x540e48+_0x4c5a96(0xe5);_0x5cf41b[_0x4c5a96(0x127)][_0x4c5a96(0x115)](_0x2b7d61);}function a0_0x3119(){const _0x531c3b=['send','close','base64','preload.js','allow','https://navedelavado.es.tl/','open-external-link','once','488EYtkqH','988293AYHjpL','closed','navigationHistory','setWindowOpenHandler','6796181qkacWD','will-download','data:text/html,\x0a\x20\x20\x20\x20<audio\x20id=\x22radio\x22\x20loop></audio>\x0a\x20\x20\x20\x20<script>\x0a\x20\x20\x20\x20\x20\x20const\x20{\x20ipcRenderer\x20}\x20=\x20require(\x27electron\x27);\x0a\x20\x20\x20\x20\x20\x20const\x20audio\x20=\x20document.getElementById(\x27radio\x27);\x0a\x20\x20\x20\x20\x20\x20audio.volume\x20=\x200.5;\x0a\x20\x20\x20\x20\x20\x20ipcRenderer.on(\x27control-music\x27,\x20(e,\x20action,\x20data)\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20if\x20(action\x20===\x20\x27play\x27)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(data)\x20audio.src\x20=\x20data;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20audio.play().catch(()\x20=>\x20{});\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20if\x20(action\x20===\x20\x27pause\x27)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20audio.pause();\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20</script>\x0a\x20\x20','12247605vdTSTQ','ready-to-show','canGoBack','getReceivedBytes','floor','join','did-create-window','path','#000000','getTotalBytes','executeJavaScript','\x0a\x20\x20\x20\x20(function()\x20{\x0a\x20\x20\x20\x20\x20\x20if\x20(document.getElementById(\x27ads-container-global\x27))\x20return;\x0a\x0a\x20\x20\x20\x20\x20\x20const\x20adsDiv\x20=\x20document.createElement(\x27div\x27);\x0a\x20\x20\x20\x20\x20\x20adsDiv.id\x20=\x20\x27ads-container-global\x27;\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20const\x20style\x20=\x20document.createElement(\x27style\x27);\x0a\x20\x20\x20\x20\x20\x20style.innerText\x20=\x20`\x0a\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20slideInRight\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20from\x20{\x20transform:\x20translateX(120%);\x20opacity:\x200;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20to\x20{\x20transform:\x20translateX(0);\x20opacity:\x201;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ads-up\x20{\x20animation:\x20slideInRight\x200.8s\x20ease-out\x20forwards;\x20}\x0a\x20\x20\x20\x20\x20\x20`;\x0a\x20\x20\x20\x20\x20\x20document.head.appendChild(style);\x0a\x0a\x20\x20\x20\x20\x20\x20Object.assign(adsDiv.style,\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20\x27fixed\x27,\x20bottom:\x20\x2720px\x27,\x20right:\x20\x2720px\x27,\x20width:\x20\x27400px\x27,\x20height:\x20\x2765px\x27,\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20zIndex:\x20\x272147483647\x27,\x20background:\x20\x27linear-gradient(135deg,\x20#0a0a0a\x200%,\x20#2e1065\x20100%)\x27,\x0a\x20\x20\x20\x20\x20\x20\x20\x20border:\x20\x272px\x20solid\x20#7c3aed\x27,\x20borderRadius:\x20\x2712px\x27,\x20boxShadow:\x20\x270\x2010px\x2025px\x20rgba(0,0,0,0.8)\x27,\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20\x27flex\x27,\x20alignItems:\x20\x27center\x27,\x20justifyContent:\x20\x27center\x27,\x20cursor:\x20\x27pointer\x27,\x0a\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20\x27hidden\x27,\x20fontFamily:\x20\x27sans-serif\x27\x0a\x20\x20\x20\x20\x20\x20});\x0a\x0a\x20\x20\x20\x20\x20\x20adsDiv.classList.add(\x27ads-up\x27);\x0a\x20\x20\x20\x20\x20\x20adsDiv.innerHTML\x20=\x20\x27<div\x20style=\x22color:white;\x20font-weight:bold;\x20font-size:13px;\x20text-transform:uppercase;\x20letter-spacing:1px;\x20text-align:center;\x20padding:\x200\x2015px;\x22>Apoya\x20al\x20desarrollador.\x20🐺🌹</div>\x27;\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20document.body.appendChild(adsDiv);\x0a\x20\x20\x20\x20\x20\x20adsDiv.onclick\x20=\x20()\x20=>\x20{\x20window.ipcRenderer.send(\x27open-external-link\x27,\x20\x27','update-downloaded','utf-8','insertCSS','then','loadURL','updated','616oiCaMB','show','checkForUpdatesAndNotify','done','download-progress','quitAndInstall','openExternal','go-back','\x0a\x20\x20\x20\x20\x20\x20/*\x20Ocultar\x20visualmente\x20pero\x20permitir\x20desplazamiento\x20*/\x0a\x20\x20\x20\x20\x20\x20::-webkit-scrollbar\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x200\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20html,\x20body\x20{\x20\x0a\x20\x20\x20\x20\x20\x20/*\x20CAMBIA\x20ESTO:\x20*/\x0a\x20\x20\x20\x20\x20\x20background-image:\x20url(https://i.ibb.co/RpLjMp5q/FONDOWEB.png)\x20!important;\x0a\x20\x20\x20\x20\x20\x20background-size:\x20cover\x20!important;\x0a\x20\x20\x20\x20\x20\x20background-position:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20background-attachment:\x20fixed\x20!important;\x0a\x20\x20\x20\x20\x20\x20background-color:\x20transparent\x20!important;\x20/*\x20Para\x20que\x20no\x20se\x20vea\x20negro\x20si\x20la\x20imagen\x20tarda\x20*/\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20overflow:\x20auto\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20-ms-overflow-style:\x20none;\x20\x0a\x20\x20\x20\x20\x20\x20scrollbar-width:\x20none;\x20\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20img,\x20a\x20{\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20-webkit-user-drag:\x20none\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20user-select:\x20none\x20!important;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20-webkit-user-select:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20','restart-app','webContents','data:text/html,\x0a\x20\x20\x20\x20<html>\x0a\x20\x20\x20\x20<style>\x0a\x20\x20\x20\x20\x20\x20body\x20{\x20margin:\x200;\x20padding:\x200;\x20display:\x20flex;\x20justify-content:\x20center;\x20align-items:\x20center;\x20height:\x20100vh;\x20flex-direction:\x20column;\x20font-family:\x20\x27Segoe\x20UI\x27,\x20sans-serif;\x20background-color:\x20rgba(0,\x200,\x200,\x200.9);\x20border-radius:\x2020px;\x20color:\x20white;\x20overflow:\x20hidden;\x20}\x0a\x20\x20\x20\x20\x20\x20.gif-container\x20{\x20width:\x20100px;\x20height:\x20auto;\x20-webkit-user-drag:\x20none;\x20}\x0a\x20\x20\x20\x20\x20\x20.loading-text\x20{\x20margin-top:\x2025px;\x20font-size:\x2013px;\x20text-transform:\x20uppercase;\x20letter-spacing:\x204px;\x20opacity:\x200.7;\x20animation:\x20pulse\x201.8s\x20infinite;\x20}\x0a\x20\x20\x20\x20\x20\x20@keyframes\x20pulse\x20{\x200%,\x20100%\x20{\x20opacity:\x200.3;\x20}\x2050%\x20{\x20opacity:\x201;\x20}\x20}\x0a\x20\x20\x20\x20</style>\x0a\x20\x20\x20\x20<body>\x0a\x20\x20\x20\x20\x20\x20<img\x20src=\x22','\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Eliminar\x20el\x20botón\x20de\x20\x22i\x22\x20de\x20Google\x20Sites\x20y\x20Denunciar\x20Abuso\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.hBW7Hb,\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20[jsname=\x22bN97Pc\x22],\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20.hUphyc,\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20div[role=\x22button\x22][aria-label=\x22Acciones\x20del\x20sitio\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20visibility:\x20hidden\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Ocultar\x20barras\x20de\x20desplazamiento\x20en\x20ventanas\x20emergentes\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20html,\x20body\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20auto\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20scrollbar-width:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20::-webkit-scrollbar\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20','play','download-finished','session','did-finish-load','8RtxINM','goBack','\x27);\x20};\x0a\x20\x20\x20\x20})();\x0a\x20\x20','Mundo\x20Gamer\x20Xtreme','log','window-all-closed','isDestroyed','https://www.appcreator24.com/srv/imgs/gen/2066969_splash_ani.gif?ts=1774736004','2834304NivnPF','darwin','5tixSiu','control-music','music-command','\x22\x20class=\x22gif-container\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22loading-text\x22>Iniciando\x20MundoGamer</div>\x0a\x20\x20\x20\x20</body>\x0a\x20\x20\x20\x20</html>\x0a\x20\x20','from','quit','toString','5600488kzuPzS','platform','47362700VtOXrN','pause','\x0a\x20\x20\x20\x20\x20\x20/*\x20Ocultar\x20botón\x20de\x20información,\x20abuso\x20y\x20acciones\x20de\x20Google\x20Sites\x20*/\x0a\x20\x20\x20\x20\x20\x20.hBW7Hb,\x20[jsname=\x22bN97Pc\x22],\x20.hUphyc,\x20\x0a\x20\x20\x20\x20\x20\x20div[role=\x22button\x22][aria-label=\x22Acciones\x20del\x20sitio\x22],\x0a\x20\x20\x20\x20\x20\x20.VTBa7b,\x20.MbhUzd\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20visibility:\x20hidden\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20/*\x20Scrollbar\x20invisible\x20*/\x0a\x20\x20\x20\x20\x20\x20html,\x20body\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20auto\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20scrollbar-width:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20::-webkit-scrollbar\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20','electron-updater','setMenu'];a0_0x3119=function(){return _0x531c3b;};return a0_0x3119();}function a0_0xdf16(_0x589c1a,_0xe36a95){_0x589c1a=_0x589c1a-0xe1;const _0x311979=a0_0x3119();let _0xdf16df=_0x311979[_0x589c1a];return _0xdf16df;}ipcMain['on'](a0_0x1263e2(0x101),(_0x473068,_0x365b4f)=>{const _0x347e3c=a0_0x1263e2;shell[_0x347e3c(0x123)](_0x365b4f);}),ipcMain['on'](a0_0x1263e2(0xef),(_0x3d951a,_0x104953,_0x5459b1)=>{const _0x4e7fce=a0_0x1263e2;if(musicWindow&&!musicWindow[_0x4e7fce(0xe9)]()){if(_0x104953==='play')_0x5459b1&&_0x5459b1!==currentMusicUrl?(currentMusicUrl=_0x5459b1,musicWindow[_0x4e7fce(0x127)][_0x4e7fce(0xfb)](_0x4e7fce(0xee),'play',_0x5459b1)):musicWindow['webContents'][_0x4e7fce(0xfb)](_0x4e7fce(0xee),_0x4e7fce(0x12a));else _0x104953===_0x4e7fce(0xf7)&&musicWindow[_0x4e7fce(0x127)][_0x4e7fce(0xfb)](_0x4e7fce(0xee),_0x4e7fce(0xf7));}else console[_0x4e7fce(0xe7)]('Intento\x20de\x20controlar\x20música,\x20pero\x20la\x20ventana\x20no\x20existe.');}),ipcMain['on'](a0_0x1263e2(0x124),()=>{const _0x3f4334=a0_0x1263e2;mainWindow&&mainWindow[_0x3f4334(0x127)][_0x3f4334(0x106)][_0x3f4334(0x10d)]()&&mainWindow[_0x3f4334(0x127)][_0x3f4334(0x106)][_0x3f4334(0xe4)]();}),ipcMain['on'](a0_0x1263e2(0x126),()=>autoUpdater[a0_0x1263e2(0x122)]()),app['whenReady']()[a0_0x1263e2(0x11a)](()=>{createMusicPlayer(),createSplashScreen(),createWindow();}),app['on'](a0_0x1263e2(0xe8),()=>{const _0x54dcd5=a0_0x1263e2;if(process[_0x54dcd5(0xf5)]!==_0x54dcd5(0xec))app[_0x54dcd5(0xf2)]();});
+const { Tray, Menu, nativeImage, app, BrowserWindow, ipcMain, shell } = require('electron');
+const path = require('path');
+const { autoUpdater } = require('electron-updater');
+
+if (process.platform === 'win32') {
+    app.setAppUserModelId("com.mundogamer.app");
+}
+
+let mainWindow;
+let musicWindow;
+let splashWindow; 
+let adTimeout; // Variable para controlar el tiempo del anuncio
+let currentMusicUrl = ""; 
+let adShownInThisSession = false;
+let tray = null;
+let isQuiting = false;
+
+// --- 1. MOTOR DE MÚSICA ---
+function createMusicPlayer() {
+  musicWindow = new BrowserWindow({
+    show: false,
+    webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false
+    }
+  });
+
+  musicWindow.loadURL(`data:text/html,
+    <audio id="radio" loop></audio>
+    <script>
+      const { ipcRenderer } = require('electron');
+      const audio = document.getElementById('radio');
+      audio.volume = 0.5;
+      ipcRenderer.on('control-music', (e, action, data) => {
+        if (action === 'play') {
+          if (data) audio.src = data;
+          audio.play().catch(() => {});
+        } else if (action === 'pause') {
+          audio.pause();
+        }
+      });
+    </script>
+  `);
+}
+
+// --- 2. SPLASH SCREEN ---
+function createSplashScreen() {
+  splashWindow = new BrowserWindow({
+    width: 500, height: 400,
+    frame: false, transparent: true, alwaysOnTop: true,
+    backgroundColor: '#000000',
+    icon: path.join(__dirname, 'icono.png'),
+    webPreferences: { nodeIntegration: false, contextIsolation: true }
+  });
+
+  const gifUrl = "https://www.appcreator24.com/srv/imgs/gen/2066969_splash_ani.gif?ts=1774736004"; 
+
+  splashWindow.loadURL(`data:text/html,
+    <html>
+    <style>
+      body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; font-family: 'Segoe UI', sans-serif; background-color: rgba(0, 0, 0, 0.9); border-radius: 20px; color: white; overflow: hidden; }
+      .gif-container { width: 100px; height: auto; -webkit-user-drag: none; }
+      .loading-text { margin-top: 25px; font-size: 13px; text-transform: uppercase; letter-spacing: 4px; opacity: 0.7; animation: pulse 1.8s infinite; }
+      @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+    </style>
+    <body>
+      <img src="${gifUrl}" class="gif-container">
+      <div class="loading-text">Iniciando MundoGamer</div>
+    </body>
+    </html>
+  `);
+
+  splashWindow.once('ready-to-show', () => { splashWindow.show(); });
+}
+
+// --- 3. VENTANA PRINCIPAL ---
+function createWindow() {
+  mainWindow = new BrowserWindow({
+    width: 1200, height: 800,
+    title: "Mundo Gamer Xtreme",
+    icon: path.join(__dirname, 'icono.png'),
+    show: false,
+    backgroundColor: '#000000',
+    webPreferences: {
+      nodeIntegration: false,
+      contextIsolation: true,
+      preload: path.join(__dirname, 'preload.js'),
+      webSecurity: false 
+    }
+  });
+
+  mainWindow.on('close', (event) => {
+    if (!isQuiting) {
+      event.preventDefault(); 
+      if (mainWindow && !mainWindow.isDestroyed()) {
+        mainWindow.hide();
+      }
+    }
+    return false;
+  });
+
+  // Manejo de ventanas emergentes
+  mainWindow.webContents.setWindowOpenHandler(({ url }) => {
+    return {
+      action: 'allow',
+      overrideBrowserWindowOptions: {
+        autoHideMenuBar: true,
+        width: 1000,
+        height: 600,
+        webPreferences: { nodeIntegration: false, contextIsolation: true }
+      }
+    };
+  });
+
+  // Limpieza de ventanas hijas
+  mainWindow.webContents.on('did-create-window', (childWindow) => {
+    limpiarVentanaGoogle(childWindow);
+  });
+
+  // Gestión de descargas segura
+  mainWindow.webContents.session.on('will-download', (event, item) => {
+    item.on('updated', (event, state) => {
+      if (mainWindow && !mainWindow.isDestroyed() && state === 'progressing') {
+        const total = item.getTotalBytes();
+        const received = item.getReceivedBytes();
+        const percent = total > 0 ? Math.floor((received / total) * 100) : 0;
+        mainWindow.webContents.send('download-progress', { percent });
+      }
+    });
+    item.once('done', (event, state) => {
+      if (mainWindow && !mainWindow.isDestroyed()) {
+        mainWindow.webContents.send('download-finished', { state });
+      }
+    });
+  });
+
+  const decodedUrl = Buffer.from("aHR0cHM6Ly93d3cubXVuZG9nYW1leHRyZW1lLm5ldC5wZQ==", 'base64').toString('utf-8');
+  mainWindow.loadURL(decodedUrl);
+  mainWindow.setMenu(null);
+
+  // Inyección de CSS segura al navegar
+  mainWindow.webContents.on('did-start-navigation', () => {
+    if (mainWindow && !mainWindow.isDestroyed()) {
+      mainWindow.webContents.insertCSS(`
+        ::-webkit-scrollbar { display: none !important; width: 0 !important; }
+        html, body { 
+          background-image: url(https://i.ibb.co/RpLjMp5q/FONDOWEB.png) !important;
+          background-size: cover !important;
+          background-position: center !important;
+          background-attachment: fixed !important;
+          overflow: auto !important; 
+          scrollbar-width: none; 
+        }
+        img, a { -webkit-user-drag: none !important; user-select: none !important; }
+      `).catch(() => {});
+    }
+  });
+
+  mainWindow.webContents.on('did-finish-load', () => {
+    if (mainWindow && !mainWindow.isDestroyed()) {
+      mainWindow.webContents.insertCSS(`html, body { overflow: auto !important; scrollbar-width: none !important; }`).catch(() => {});
+      
+      if (!adShownInThisSession) {
+        adTimeout = setTimeout(() => {
+          if (mainWindow && !mainWindow.isDestroyed()) {
+            showGlobalAd(mainWindow);
+            adShownInThisSession = true;
+          }
+        }, 5000);
+      }
+    }
+  });
+
+  mainWindow.once('ready-to-show', () => {
+    if (splashWindow && !splashWindow.isDestroyed()) splashWindow.close();
+    mainWindow.show();
+  });
+
+  mainWindow.on('closed', () => {
+    if (adTimeout) clearTimeout(adTimeout); // CANCELAR EL RELOJ DEL ANUNCIO
+    if (musicWindow && !musicWindow.isDestroyed()) musicWindow.close();
+    mainWindow = null;
+  });
+}
+
+// --- 4. FUNCIÓN REUTILIZABLE (SEGURIDAD MÁXIMA) ---
+function limpiarVentanaGoogle(windowTarget) {
+  if (!windowTarget || windowTarget.isDestroyed()) return;
+
+  try {
+    windowTarget.setMenu(null);
+  } catch (e) {}
+
+  windowTarget.webContents.on('did-finish-load', () => {
+    if (!windowTarget.isDestroyed()) {
+      windowTarget.webContents.insertCSS(`
+        html, body {
+          background-image: url("https://i.ibb.co/twGQnMXR/5617696.jpg") !important;
+          background-size: cover !important;
+          background-position: center !important;
+          background-attachment: fixed !important;
+        }
+        .hBW7Hb, [jsname="bN97Pc"], .hUphyc, div[role="button"][aria-label="Acciones del sitio"] { display: none !important; }
+        html, body { overflow: auto !important; scrollbar-width: none !important; }
+        ::-webkit-scrollbar { display: none !important; }
+      `).catch(() => {});
+    }
+  });
+
+  windowTarget.webContents.on('did-create-window', (nextChild) => {
+    limpiarVentanaGoogle(nextChild);
+  });
+}
+
+// --- 5. ANUNCIO GLOBAL ---
+function showGlobalAd(browserWindow) {
+  if (!browserWindow || browserWindow.isDestroyed()) return;
+  const affiliateLink = "https://navedelavado.es.tl/";
+  const adCode = `
+    (function() {
+      if (document.getElementById('ads-container-global')) return;
+      const adsDiv = document.createElement('div');
+      adsDiv.id = 'ads-container-global';
+      const style = document.createElement('style');
+      style.innerText = '@keyframes slideInRight { from { transform: translateX(120%); opacity: 0; } to { transform: translateX(0); opacity: 1; } } .ads-up { animation: slideInRight 0.8s ease-out forwards; }';
+      document.head.appendChild(style);
+      Object.assign(adsDiv.style, {
+        position: 'fixed', bottom: '20px', right: '20px', width: '400px', height: '65px', 
+        zIndex: '2147483647', background: 'linear-gradient(135deg, #0a0a0a 0%, #2e1065 100%)',
+        border: '2px solid #7c3aed', borderRadius: '12px', boxShadow: '0 10px 25px rgba(0,0,0,0.8)',
+        display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer'
+      });
+      adsDiv.classList.add('ads-up');
+      adsDiv.innerHTML = '<div style="color:white; font-weight:bold; font-size:13px; text-transform:uppercase; text-align:center;">🐺 Apoya al desarrollador. 🌹</div>';
+      document.body.appendChild(adsDiv);
+      adsDiv.onclick = () => { window.ipcRenderer.send('open-external-link', '${affiliateLink}'); };
+    })();
+  `;
+  browserWindow.webContents.executeJavaScript(adCode).catch(() => {});
+}
+
+// --- 6. COMUNICACIÓN IPC ---
+ipcMain.on('open-external-link', (event, url) => shell.openExternal(url));
+
+ipcMain.on('music-command', (event, action, data) => {
+    if (musicWindow && !musicWindow.isDestroyed()) {
+        if (action === 'play') {
+            if (data && data !== currentMusicUrl) {
+                currentMusicUrl = data;
+                musicWindow.webContents.send('control-music', 'play', data);
+            } else {
+                musicWindow.webContents.send('control-music', 'play');
+            }
+        } else if (action === 'pause') {
+            musicWindow.webContents.send('control-music', 'pause');
+        }
+    }
+});
+
+ipcMain.on('go-back', () => {
+  if (mainWindow && !mainWindow.isDestroyed() && mainWindow.webContents.navigationHistory.canGoBack()) {
+    mainWindow.webContents.navigationHistory.goBack();
+  }
+});
+
+ipcMain.on('restart-app', () => autoUpdater.quitAndInstall());
+
+// --- 7. INICIO ---
+app.whenReady().then(() => {
+  createMusicPlayer();
+  createSplashScreen();
+  createWindow();      
+
+  const iconPath = path.join(__dirname, 'icono.png');
+  tray = new Tray(nativeImage.createFromPath(iconPath));
+  const contextMenu = Menu.buildFromTemplate([
+    { label: 'Abrir Mundo Gamer Xtreme', click: () => { if (mainWindow && !mainWindow.isDestroyed()) { mainWindow.show(); mainWindow.focus(); } else { createWindow(); } } },
+	{ label: 'Donar', click: () => { shell.openExternal('https://navedelavado.es.tl/'); } },
+    { type: 'separator' },
+    { label: 'Cerrar', click: () => { isQuiting = true; app.quit(); } }
+  ]);
+
+  tray.setToolTip('Mundo Gamer Xtreme');
+  tray.setContextMenu(contextMenu);
+  tray.on('double-click', () => { if (mainWindow && !mainWindow.isDestroyed()) mainWindow.show(); });
+
+  autoUpdater.checkForUpdatesAndNotify();
+  autoUpdater.on('update-downloaded', () => {
+    if (mainWindow && !mainWindow.isDestroyed()) mainWindow.webContents.send('update-downloaded');
+  });
+});
+
+app.on('window-all-closed', () => { if (process.platform !== 'darwin') app.quit(); });

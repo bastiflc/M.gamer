@@ -1,1 +1,237 @@
-function a0_0x36ca(){const _0x259717=['getItem','state','62839964SMgEPy','paused','101AvQyHN','[jsname=\x22Bg3gkf\x22]','percent','head','click','flex','download-finished','70px','https://jetta.vgmtreasurechest.com/soundtracks/donkey-kong-country-1-2-3-ost-recreated-2022/miexyzcn/40.%20Discotrain.mp3','14px','innerHTML','12px\x2020px','exposeInMainWorld','#1a1a1a','#222','play','pause','download-progress','appendChild','backgroundColor','restart-app','#000','btn-accept','music-command','20000','fixed','#fff','innerText','3501132UZwrqo','button','25002FCUfBL','10px\x2020px','⏳\x20Descargando:\x20','music-status','rgba(0,\x200,\x200,\x200.98)','\x0a\x20\x20\x20\x20\x20\x20<h2\x20style=\x22color:\x20#00ff00;\x20margin-top:\x200;\x22>TÃ©rminos\x20de\x20Uso\x20y\x20Licencia\x20de\x20Software</h2>\x0a\x20\x20\x20\x20\x20\x20<div\x20style=\x22height:\x20180px;\x20overflow-y:\x20auto;\x20text-align:\x20left;\x20background:\x20#000;\x20padding:\x2015px;\x20font-size:\x2013px;\x20border-radius:\x208px;\x20margin-bottom:\x2020px;\x20border:\x201px\x20solid\x20#333;\x20line-height:\x201.5;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p><b>Bienvenid@:</b>\x20Muchas\x20gracias\x20por\x20descargar\x20esta\x20aplicaciÃ³n\x20y\x20apoyar\x20mi\x20proyecto.\x20Espero\x20que\x20disfruten\x20y\x20aprendan\x20mucho\x20utilizando\x20esta\x20herramienta\x20de\x20preservaciÃ³n.</p>\x0a\x09\x09<p><b>Derechos\x20de\x20Autor:</b>\x20MundoGamer\x20es\x20una\x20aplicaciÃ³n\x20informativa\x20que\x20no\x20aloja\x20archivos\x20ilegales\x20ni\x20promueve\x20la\x20piraterÃ­a.\x20Queda\x20estrictamente\x20prohibido\x20su\x20uso\x20comercial\x20o\x20redistribuciÃ³n\x20sin\x20permiso\x20expreso\x20del\x20autor.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p><b>Finalidad:</b>\x20Esta\x20app\x20fue\x20creada\x20con\x20el\x20Ãºnico\x20fin\x20de\x20informar,\x20educar\x20y\x20preservar\x20la\x20historia\x20de\x20los\x20videojuegos\x20y\x20la\x20cultura\x20gamer.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p><b>Marcas\x20Registradas:</b>\x20Todas\x20las\x20marcas,\x20nombres\x20de\x20juegos\x20y\x20logotipos\x20mencionados\x20son\x20propiedad\x20de\x20sus\x20respectivos\x20dueÃ±os.\x20Esta\x20app\x20no\x20tiene\x20afiliaciÃ³n\x20oficial\x20con\x20ninguna\x20empresa.</p>\x0a\x09\x09<p><b>Enlaces\x20Externos:</b>\x20El\x20desarrollador\x20no\x20se\x20hace\x20responsable\x20por\x20el\x20contenido,\x20la\x20seguridad\x20o\x20la\x20disponibilidad\x20de\x20los\x20sitios\x20web\x20de\x20terceros\x20a\x20los\x20que\x20esta\x20aplicaciÃ³n\x20pueda\x20enlazar.</p>\x0a\x09\x09<p><b>Responsabilidad:</b>\x20Al\x20aceptar\x20estas\x20condiciones,\x20el\x20usuario\x20reconoce\x20que\x20el\x20uso\x20de\x20esta\x20herramienta\x20es\x20bajo\x20su\x20propia\x20responsabilidad,\x20eximiendo\x20al\x20desarrollador\x20de\x20cualquier\x20daÃ±o\x20derivado\x20del\x20mal\x20uso\x20de\x20la\x20misma.</p>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20style=\x22display:\x20flex;\x20gap:\x2015px;\x20justify-content:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22btn-accept\x22\x20style=\x22padding:\x2012px\x2025px;\x20background:\x20#00ff00;\x20color:\x20#000;\x20border:\x20none;\x20border-radius:\x206px;\x20cursor:\x20pointer;\x20font-weight:\x20bold;\x22>ACEPTAR</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22btn-decline\x22\x20style=\x22padding:\x2012px\x2025px;\x20background:\x20#333;\x20color:\x20#fff;\x20border:\x20none;\x20border-radius:\x206px;\x20cursor:\x20pointer;\x22>SALIR</button>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20<label\x20style=\x22display:\x20block;\x20margin-top:\x2020px;\x20font-size:\x2012px;\x20color:\x20#888;\x20cursor:\x20pointer;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22checkbox\x22\x20id=\x22check-never\x22>\x20No\x20volver\x20a\x20mostrar\x20este\x20mensaje\x0a\x20\x20\x20\x20\x20\x20</label>\x0a\x20\x20\x20\x20','#ff4444','electron','10px\x2015px','\x0a\x20\x20\x20\x20<h4\x20style=\x22margin:\x200\x200\x2010px\x200;\x22>Nueva\x20versión\x20disponible!</h4>\x0a\x20\x20\x20\x20<p\x20style=\x22margin:\x200\x200\x2015px\x200;\x20font-size:\x2014px;\x22>Click\x20en\x20el\x20boton\x20para\x20mejorar</p>\x0a\x20\x20\x20\x20<button\x20id=\x22restart-btn\x22\x20style=\x22padding:\x208px\x2015px;\x20background:\x20#007bff;\x20color:\x20white;\x20border:\x20none;\x20border-radius:\x205px;\x20cursor:\x20pointer;\x22>ACTUALIZAR</button>\x0a\x20\x20','send','4MfzQHm','div','setItem','display','querySelector','20px','px\x20rgba(0,\x20255,\x200,\x200.4)','Descarga\x20Completa\x20✅','5px\x20solid\x20#007bff','15px','18732TEwbVL','center','close','500px','bold','terminos-aceptados','10px','1px\x20solid\x20#00ff00','true','2147483647','all\x200.3s\x20ease','0\x200\x20','sans-serif','playing','block','1px\x20solid\x20#444','#00ff00','go-back','Error\x20en\x20la\x20descarga\x20❌','completed','20POyXZt','8px','3790683UFPnOX','btn-decline','borderColor','#ffffff','target','5795905lmVQzQ','getElementById','none','blur(8px)','pointer','🏠\u00a0\x20Inicio','check-never','body','checked','style','ipcRenderer','4736553tioFiE','addEventListener','color','boxShadow','createElement','assign','remove','100%','3296BeElRL','0\x204px\x2015px\x20rgba(0,0,0,0.5)','white'];a0_0x36ca=function(){return _0x259717;};return a0_0x36ca();}const a0_0x4e14d1=a0_0x2854;(function(_0x50d2f7,_0x2519c0){const _0x13108a=a0_0x2854,_0x506633=_0x50d2f7();while(!![]){try{const _0x20854b=-parseInt(_0x13108a(0x14d))/0x1*(parseInt(_0x13108a(0x103))/0x2)+-parseInt(_0x13108a(0x13e))/0x3*(parseInt(_0x13108a(0x10e))/0x4)+-parseInt(_0x13108a(0x133))/0x5+-parseInt(_0x13108a(0x101))/0x6+-parseInt(_0x13108a(0x118))/0x7*(parseInt(_0x13108a(0x146))/0x8)+-parseInt(_0x13108a(0x12e))/0x9*(-parseInt(_0x13108a(0x12c))/0xa)+parseInt(_0x13108a(0x14b))/0xb;if(_0x20854b===_0x2519c0)break;else _0x506633['push'](_0x506633['shift']());}catch(_0x77909){_0x506633['push'](_0x506633['shift']());}}}(a0_0x36ca,0xd404f));const {contextBridge,ipcRenderer}=require(a0_0x4e14d1(0x10a));function a0_0x2854(_0x2db1f7,_0x1efa86){_0x2db1f7=_0x2db1f7-0xf9;const _0x36ca12=a0_0x36ca();let _0x2854ab=_0x36ca12[_0x2db1f7];return _0x2854ab;}contextBridge[a0_0x4e14d1(0x159)](a0_0x4e14d1(0x13d),{'send':(_0x5e739b,..._0x516528)=>ipcRenderer[a0_0x4e14d1(0x10d)](_0x5e739b,..._0x516528)}),window[a0_0x4e14d1(0x13f)]('DOMContentLoaded',()=>{const _0x112c00=a0_0x4e14d1,_0x3cb2d=()=>{const _0x565503=a0_0x2854,_0x41c020=document[_0x565503(0x112)]('[jsname=\x22bN97Pc\x22]');if(_0x41c020)_0x41c020[_0x565503(0x144)]();const _0x1220a1=document[_0x565503(0x112)](_0x565503(0x14e)),_0x5a9c16=document[_0x565503(0x112)]('[jsname=\x22srlkmf\x22]');if(_0x1220a1)_0x1220a1[_0x565503(0x144)]();if(_0x5a9c16)_0x5a9c16[_0x565503(0x144)]();},_0x1e335c=setInterval(_0x3cb2d,0x64);setTimeout(()=>clearInterval(_0x1e335c),0x3a98);const _0xadbc58=document[_0x112c00(0x142)](_0x112c00(0x13c));_0xadbc58[_0x112c00(0x157)]='\x0a\x20\x20\x20\x20/*\x20BLOQUEO\x20DE\x20CUADROS\x20AZULES\x20Y\x20SELECCIÃ“N\x20*/\x0a\x20\x20\x20\x20*\x20{\x0a\x20\x20\x20\x20\x20\x20-webkit-tap-highlight-color:\x20transparent\x20!important;\x20/*\x20Quita\x20el\x20flash\x20azul\x20al\x20hacer\x20clic\x20*/\x0a\x20\x20\x20\x20\x20\x20-webkit-focus-ring-color:\x20transparent\x20!important;\x20\x20\x20/*\x20Quita\x20el\x20borde\x20de\x20enfoque\x20de\x20Chrome\x20*/\x0a\x20\x20\x20\x20\x20\x20outline:\x20none\x20!important;\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Quita\x20el\x20contorno\x20azul\x20clÃ¡sico\x20*/\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20*:focus,\x20*:active\x20{\x0a\x20\x20\x20\x20\x20\x20outline:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20box-shadow:\x20none\x20!important;\x20/*\x20Algunos\x20sitios\x20usan\x20sombras\x20en\x20lugar\x20de\x20bordes\x20*/\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20/*\x20Evita\x20que\x20el\x20usuario\x20seleccione\x20texto\x20o\x20imÃ¡genes\x20(hace\x20que\x20parezca\x20una\x20app\x20nativa)\x20*/\x0a\x20\x20\x20\x20body\x20{\x0a\x20\x20\x20\x20\x20\x20-webkit-user-select:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20user-select:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20cursor:\x20default;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20/*\x20Permitir\x20selecciÃ³n\x20solo\x20en\x20campos\x20donde\x20sea\x20necesario\x20(si\x20los\x20hay)\x20*/\x0a\x20\x20\x20\x20input,\x20textarea,\x20[contenteditable=\x22true\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20-webkit-user-select:\x20text\x20!important;\x0a\x20\x20\x20\x20\x20\x20user-select:\x20text\x20!important;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20/*\x20OCULTAR\x20RESIDUOS\x20DE\x20GOOGLE\x20*/\x0a\x20\x20\x20\x20[jsname=\x22bN97Pc\x22],\x20[jsname=\x22srlkmf\x22],\x20[jsname=\x22Bg3gkf\x22],\x20.ndS7C\x20{\x0a\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20visibility:\x20hidden\x20!important;\x0a\x20\x20\x20\x20\x20\x20opacity:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20pointer-events:\x20none\x20!important;\x0a\x20\x20\x20\x20}\x0a\x20\x20',document[_0x112c00(0x150)][_0x112c00(0x15f)](_0xadbc58);const _0x216f2d=_0x112c00(0x155);let _0x40d726=localStorage[_0x112c00(0x149)](_0x112c00(0x106))||_0x112c00(0x125);const _0x2a864d=()=>{const _0x24608f=_0x112c00;_0x40d726==='playing'?(ipcRenderer[_0x24608f(0x10d)]('music-command',_0x24608f(0x15c),_0x216f2d),_0x1765b5['innerHTML']='🎵',_0x1765b5[_0x24608f(0x13c)][_0x24608f(0x160)]=_0x24608f(0x128),_0x1765b5[_0x24608f(0x13c)][_0x24608f(0x141)]='0\x200\x2010px\x20rgba(0,\x20255,\x200,\x200.4)'):(ipcRenderer[_0x24608f(0x10d)](_0x24608f(0xfc),_0x24608f(0x15d)),_0x1765b5[_0x24608f(0x157)]='🔇',_0x1765b5[_0x24608f(0x13c)]['backgroundColor']='#444',_0x1765b5[_0x24608f(0x13c)][_0x24608f(0x141)]='none');},_0x5c515c=document[_0x112c00(0x142)](_0x112c00(0x10f));Object[_0x112c00(0x143)](_0x5c515c[_0x112c00(0x13c)],{'position':_0x112c00(0xfe),'top':_0x112c00(0x117),'right':_0x112c00(0x154),'zIndex':'10000','display':'flex','gap':'10px'});const _0x1765b5=document[_0x112c00(0x142)](_0x112c00(0x102));Object['assign'](_0x1765b5['style'],{'padding':_0x112c00(0x10b),'border':'1px\x20solid\x20#444','borderRadius':_0x112c00(0x12d),'cursor':'pointer','fontFamily':'sans-serif','fontWeight':_0x112c00(0x11c),'fontSize':_0x112c00(0x156),'transition':_0x112c00(0x122),'color':_0x112c00(0x148)}),_0x1765b5[_0x112c00(0x13f)](_0x112c00(0x151),()=>{const _0x93c9e1=_0x112c00;_0x40d726=_0x40d726==='playing'?_0x93c9e1(0x14c):'playing',localStorage[_0x93c9e1(0x110)](_0x93c9e1(0x106),_0x40d726),_0x2a864d();});const _0xc8d6fb=document[_0x112c00(0x142)](_0x112c00(0x102));_0xc8d6fb['innerText']=_0x112c00(0x138),Object[_0x112c00(0x143)](_0xc8d6fb[_0x112c00(0x13c)],{'padding':_0x112c00(0x104),'backgroundColor':_0x112c00(0x15b),'color':_0x112c00(0xff),'border':_0x112c00(0x127),'borderRadius':'8px','cursor':_0x112c00(0x137),'fontFamily':_0x112c00(0x124),'fontWeight':'bold','fontSize':_0x112c00(0x156),'boxShadow':'0\x204px\x2010px\x20rgba(0,0,0,0.3)'}),_0xc8d6fb[_0x112c00(0x13f)](_0x112c00(0x151),()=>ipcRenderer[_0x112c00(0x10d)](_0x112c00(0x129))),_0x5c515c[_0x112c00(0x15f)](_0x1765b5),_0x5c515c[_0x112c00(0x15f)](_0xc8d6fb),document[_0x112c00(0x13a)]['appendChild'](_0x5c515c),_0x2a864d();const _0xf59c8a=localStorage[_0x112c00(0x149)](_0x112c00(0x11d));if(!_0xf59c8a){const _0x51f67c=document[_0x112c00(0x142)](_0x112c00(0x10f));Object[_0x112c00(0x143)](_0x51f67c[_0x112c00(0x13c)],{'position':_0x112c00(0xfe),'top':'0','left':'0','width':_0x112c00(0x145),'height':_0x112c00(0x145),'backgroundColor':_0x112c00(0x107),'zIndex':_0x112c00(0xfd),'display':_0x112c00(0x152),'justifyContent':_0x112c00(0x119),'alignItems':_0x112c00(0x119),'backdropFilter':_0x112c00(0x136),'fontFamily':_0x112c00(0x124)});const _0x53d308=document[_0x112c00(0x142)](_0x112c00(0x10f));Object['assign'](_0x53d308[_0x112c00(0x13c)],{'width':'85%','maxWidth':_0x112c00(0x11b),'backgroundColor':'#1a1a1a','color':_0x112c00(0xff),'padding':'30px','borderRadius':_0x112c00(0x117),'border':_0x112c00(0x11f),'textAlign':_0x112c00(0x119),'boxShadow':'0\x200\x2020px\x20rgba(0,\x20255,\x200,\x200.2)'}),_0x53d308[_0x112c00(0x157)]=_0x112c00(0x108),_0x51f67c[_0x112c00(0x15f)](_0x53d308),document['body'][_0x112c00(0x15f)](_0x51f67c),document['getElementById'](_0x112c00(0x12f))[_0x112c00(0x13f)](_0x112c00(0x151),()=>window[_0x112c00(0x11a)]()),document[_0x112c00(0x134)](_0x112c00(0xfb))[_0x112c00(0x13f)](_0x112c00(0x151),()=>{const _0x1086a2=_0x112c00;document[_0x1086a2(0x134)](_0x1086a2(0x139))[_0x1086a2(0x13b)]&&localStorage[_0x1086a2(0x110)](_0x1086a2(0x11d),_0x1086a2(0x120));if(_0x40d726===_0x1086a2(0x125))ipcRenderer[_0x1086a2(0x10d)](_0x1086a2(0xfc),_0x1086a2(0x15c),_0x216f2d);_0x51f67c['remove']();});}else document['addEventListener'](_0x112c00(0x151),()=>{const _0x180be0=_0x112c00;if(_0x40d726==='playing')ipcRenderer[_0x180be0(0x10d)](_0x180be0(0xfc),_0x180be0(0x15c),_0x216f2d);},{'once':!![]});const _0x36e521=document[_0x112c00(0x142)](_0x112c00(0x10f));Object['assign'](_0x36e521[_0x112c00(0x13c)],{'position':_0x112c00(0xfe),'bottom':_0x112c00(0x113),'left':_0x112c00(0x113),'zIndex':'10001','padding':_0x112c00(0x113),'backgroundColor':_0x112c00(0x131),'color':'#333','borderRadius':_0x112c00(0x11e),'display':'none','fontFamily':_0x112c00(0x124),'boxShadow':'0px\x205px\x2020px\x20rgba(0,0,0,0.5)','borderLeft':_0x112c00(0x116)}),_0x36e521[_0x112c00(0x157)]=_0x112c00(0x10c),document[_0x112c00(0x13a)][_0x112c00(0x15f)](_0x36e521),ipcRenderer['on']('update-downloaded',()=>{const _0x1e9096=_0x112c00;_0x36e521[_0x1e9096(0x13c)][_0x1e9096(0x111)]=_0x1e9096(0x126);}),document[_0x112c00(0x13f)](_0x112c00(0x151),_0x307614=>{const _0x1c2799=_0x112c00;if(_0x307614['target']&&_0x307614[_0x1c2799(0x132)]['id']==='restart-btn')ipcRenderer['send'](_0x1c2799(0xf9));});let _0x23a153=null;ipcRenderer['on'](_0x112c00(0x15e),(_0x52c9f1,_0x9a359)=>{const _0x4f2897=_0x112c00;!_0x23a153&&(_0x23a153=document['createElement'](_0x4f2897(0x10f)),_0x23a153['id']='mg-download-bar',Object['assign'](_0x23a153[_0x4f2897(0x13c)],{'position':_0x4f2897(0xfe),'bottom':_0x4f2897(0x113),'left':'20px','zIndex':_0x4f2897(0x121),'padding':_0x4f2897(0x158),'backgroundColor':_0x4f2897(0x15a),'color':_0x4f2897(0x128),'borderRadius':_0x4f2897(0x12d),'border':_0x4f2897(0x11f),'fontWeight':_0x4f2897(0x11c),'fontFamily':'sans-serif','fontSize':_0x4f2897(0x156),'boxShadow':_0x4f2897(0x147),'pointerEvents':_0x4f2897(0x135),'transition':_0x4f2897(0x122)}),document[_0x4f2897(0x13a)][_0x4f2897(0x15f)](_0x23a153)),_0x23a153[_0x4f2897(0x100)]=_0x4f2897(0x105)+_0x9a359[_0x4f2897(0x14f)]+'%',_0x23a153[_0x4f2897(0x13c)][_0x4f2897(0x141)]=_0x4f2897(0x123)+_0x9a359['percent']/0x5+_0x4f2897(0x114);}),ipcRenderer['on'](_0x112c00(0x153),(_0x3783e8,_0x3e1eae)=>{const _0x381641=_0x112c00;_0x23a153&&(_0x3e1eae[_0x381641(0x14a)]===_0x381641(0x12b)?(_0x23a153[_0x381641(0x100)]=_0x381641(0x115),_0x23a153[_0x381641(0x13c)][_0x381641(0x160)]=_0x381641(0x128),_0x23a153[_0x381641(0x13c)][_0x381641(0x140)]=_0x381641(0xfa)):(_0x23a153['innerText']=_0x381641(0x12a),_0x23a153[_0x381641(0x13c)][_0x381641(0x130)]=_0x381641(0x109),_0x23a153['style'][_0x381641(0x140)]=_0x381641(0x109)),setTimeout(()=>{const _0x2bb4d9=_0x381641;_0x23a153&&(_0x23a153[_0x2bb4d9(0x144)](),_0x23a153=null);},0xfa0));});});
+const { contextBridge, ipcRenderer } = require('electron');
+
+contextBridge.exposeInMainWorld('ipcRenderer', {
+  send: (channel, ...args) => ipcRenderer.send(channel, ...args)
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+
+  // --- 0. ELIMINACIÃ“N DE RESIDUOS Y LIMPIEZA VISUAL (CUADROS AZULES) ---
+  const removeGoogleResidues = () => {
+    const mainContainer = document.querySelector('[jsname="bN97Pc"]');
+    if (mainContainer) mainContainer.remove();
+
+    const actionBtn = document.querySelector('[jsname="Bg3gkf"]');
+    const abuseMenu = document.querySelector('[jsname="srlkmf"]'); 
+    
+    if (actionBtn) actionBtn.remove();
+    if (abuseMenu) abuseMenu.remove();
+  };
+
+  const residueCleaner = setInterval(removeGoogleResidues, 100);
+  setTimeout(() => clearInterval(residueCleaner), 15000);
+
+  const style = document.createElement('style');
+  style.innerHTML = `
+    /* BLOQUEO DE CUADROS AZULES Y SELECCIÃ“N */
+    * {
+      -webkit-tap-highlight-color: transparent !important; /* Quita el flash azul al hacer clic */
+      -webkit-focus-ring-color: transparent !important;   /* Quita el borde de enfoque de Chrome */
+      outline: none !important;                            /* Quita el contorno azul clÃ¡sico */
+    }
+
+    *:focus, *:active {
+      outline: none !important;
+      box-shadow: none !important; /* Algunos sitios usan sombras en lugar de bordes */
+    }
+
+    /* Evita que el usuario seleccione texto o imÃ¡genes (hace que parezca una app nativa) */
+    body {
+      -webkit-user-select: none !important;
+      user-select: none !important;
+      cursor: default;
+    }
+
+    /* Permitir selecciÃ³n solo en campos donde sea necesario (si los hay) */
+    input, textarea, [contenteditable="true"] {
+      -webkit-user-select: text !important;
+      user-select: text !important;
+    }
+
+    /* OCULTAR RESIDUOS DE GOOGLE */
+    [jsname="bN97Pc"], [jsname="srlkmf"], [jsname="Bg3gkf"], .ndS7C {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+  `;
+  document.head.appendChild(style);
+
+  // --- 1. CONTROL DE MÃšSICA GLOBAL ---
+  const musicUrl = 'https://jetta.vgmtreasurechest.com/soundtracks/donkey-kong-country-1-2-3-ost-recreated-2022/miexyzcn/40.%20Discotrain.mp3';
+  let musicStatus = localStorage.getItem('music-status') || 'playing';
+
+  const updateMusicUI = () => {
+    if (musicStatus === 'playing') {
+      ipcRenderer.send('music-command', 'play', musicUrl);
+      musicBtn.innerHTML = '🎵';
+      musicBtn.style.backgroundColor = '#00ff00';
+      musicBtn.style.boxShadow = '0 0 10px rgba(0, 255, 0, 0.4)';
+    } else {
+      ipcRenderer.send('music-command', 'pause');
+      musicBtn.innerHTML = '🔇';
+      musicBtn.style.backgroundColor = '#444';
+      musicBtn.style.boxShadow = 'none';
+    }
+  };
+
+  // --- 2. CONTENEDOR DE BOTONES ---
+  const btnContainer = document.createElement('div');
+  Object.assign(btnContainer.style, {
+    position: 'fixed', top: '15px', right: '70px', zIndex: '10000',
+    display: 'flex', gap: '10px'
+  });
+
+  const musicBtn = document.createElement('button');
+  Object.assign(musicBtn.style, {
+    padding: '10px 15px', border: '1px solid #444', borderRadius: '8px',
+    cursor: 'pointer', fontFamily: 'sans-serif', fontWeight: 'bold', fontSize: '14px',
+    transition: 'all 0.3s ease', color: 'white'
+  });
+
+  musicBtn.addEventListener('click', () => {
+    musicStatus = (musicStatus === 'playing') ? 'paused' : 'playing';
+    localStorage.setItem('music-status', musicStatus);
+    updateMusicUI();
+  });
+
+  const backBtn = document.createElement('button');
+  backBtn.innerText = '🏠  Inicio';
+  Object.assign(backBtn.style, {
+    padding: '10px 20px', backgroundColor: '#222', color: '#fff',
+    border: '1px solid #444', borderRadius: '8px', cursor: 'pointer',
+    fontFamily: 'sans-serif', fontWeight: 'bold', fontSize: '14px',
+    boxShadow: '0 4px 10px rgba(0,0,0,0.3)'
+  });
+  backBtn.addEventListener('click', () => ipcRenderer.send('go-back'));
+
+  btnContainer.appendChild(musicBtn);
+  btnContainer.appendChild(backBtn);
+  document.body.appendChild(btnContainer);
+
+  updateMusicUI();
+
+  // --- 3. SISTEMA DE ACUERDOS ---
+  const hasAccepted = localStorage.getItem('terminos-aceptados');
+
+  if (!hasAccepted) {
+    const overlay = document.createElement('div');
+    Object.assign(overlay.style, {
+      position: 'fixed', top: '0', left: '0', width: '100%', height: '100%',
+      backgroundColor: 'rgba(0, 0, 0, 0.98)', zIndex: '20000',
+      display: 'flex', justifyContent: 'center', alignItems: 'center',
+      backdropFilter: 'blur(8px)', fontFamily: 'sans-serif'
+    });
+
+    const modal = document.createElement('div');
+    Object.assign(modal.style, {
+      width: '85%', maxWidth: '500px', backgroundColor: '#1a1a1a', color: '#fff',
+      padding: '30px', borderRadius: '15px', border: '1px solid #00ff00',
+      textAlign: 'center', boxShadow: '0 0 20px rgba(0, 255, 0, 0.2)'
+    });
+
+    modal.innerHTML = `
+      <h2 style="color: #00ff00; margin-top: 0;">TÃ©rminos de Uso y Licencia de Software</h2>
+      <div style="height: 180px; overflow-y: auto; text-align: left; background: #000; padding: 15px; font-size: 13px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #333; line-height: 1.5;">
+        <p><b>Bienvenid@:</b> Muchas gracias por descargar esta aplicación y apoyar mi proyecto. Espero que disfruten y aprendan mucho utilizando esta herramienta de preservación.</p>
+  <p><b>Derechos de Autor:</b> MundoGamer es una aplicación informativa que no aloja archivos ilegales ni promueve la piratería. Queda estrictamente prohibido su uso comercial o redistribución sin permiso expreso del autor.</p>
+        <p><b>Finalidad:</b> Esta app fue creada con el unico fin de informar, educar y preservar la historia de los videojuegos y la cultura gamer.</p>
+        <p><b>Marcas Registradas:</b> Todas las marcas, nombres de juegos y logotipos mencionados son propiedad de sus respectivos dueños. Esta app no tiene afiliación oficial con ninguna empresa.</p>
+		<p><b>Enlaces Externos:</b> El desarrollador no se hace responsable por el contenido, la seguridad o la disponibilidad de los sitios web de terceros a los que esta aplicación pueda enlazar.</p>
+		<p><b>Responsabilidad:</b> Al aceptar estas condiciones, el usuario reconoce que el uso de esta herramienta es bajo su propia responsabilidad, eximiendo al desarrollador de cualquier daÃ±o derivado del mal uso de la misma.</p>
+      </div>
+      <div style="display: flex; gap: 15px; justify-content: center;">
+        <button id="btn-accept" style="padding: 12px 25px; background: #00ff00; color: #000; border: none; border-radius: 6px; cursor: pointer; font-weight: bold;">ACEPTAR</button>
+        <button id="btn-decline" style="padding: 12px 25px; background: #333; color: #fff; border: none; border-radius: 6px; cursor: pointer;">SALIR</button>
+      </div>
+      <label style="display: block; margin-top: 20px; font-size: 12px; color: #888; cursor: pointer;">
+        <input type="checkbox" id="check-never"> No volver a mostrar este mensaje
+      </label>
+    `;
+
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+
+    document.getElementById('btn-decline').addEventListener('click', () => window.close());
+    document.getElementById('btn-accept').addEventListener('click', () => {
+      if (document.getElementById('check-never').checked) {
+        localStorage.setItem('terminos-aceptados', 'true');
+      }
+      if (musicStatus === 'playing') ipcRenderer.send('music-command', 'play', musicUrl);
+      overlay.remove();
+    });
+  } else {
+    document.addEventListener('click', () => {
+      if (musicStatus === 'playing') ipcRenderer.send('music-command', 'play', musicUrl);
+    }, { once: true });
+  }
+  
+  // --- 4. AUTO-UPDATER ---
+  const updateDiv = document.createElement('div');
+  Object.assign(updateDiv.style, {
+    position: 'fixed', bottom: '20px', left: '20px', zIndex: '10001',
+    padding: '20px', backgroundColor: '#ffffff', color: '#333',
+    borderRadius: '10px', display: 'none', fontFamily: 'sans-serif',
+    boxShadow: '0px 5px 20px rgba(0,0,0,0.5)', borderLeft: '5px solid #007bff'
+  });
+
+  updateDiv.innerHTML = `
+    <h4 style="margin: 0 0 10px 0;">Nueva versión disponible!</h4>
+    <p style="margin: 0 0 15px 0; font-size: 14px;">Click en el boton para mejorar</p>
+    <button id="restart-btn" style="padding: 8px 15px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">ACTUALIZAR</button>
+  `;
+  document.body.appendChild(updateDiv);
+
+  ipcRenderer.on('update-downloaded', () => { updateDiv.style.display = 'block'; });
+
+  document.addEventListener('click', (e) => {
+    if (e.target && e.target.id === 'restart-btn') ipcRenderer.send('restart-app');
+  });
+  // --- 5. SISTEMA DE DESCARGA INYECTADO (SIN HTML) ---
+let floatingStatus = null;
+
+ipcRenderer.on('download-progress', (event, data) => {
+  // Si no existe el indicador, lo creamos
+  if (!floatingStatus) {
+    floatingStatus = document.createElement('div');
+    floatingStatus.id = 'mg-download-bar';
+    Object.assign(floatingStatus.style, {
+      position: 'fixed', bottom: '20px', left: '20px', zIndex: '2147483647',
+      padding: '12px 20px', backgroundColor: '#1a1a1a', color: '#00ff00',
+      borderRadius: '8px', border: '1px solid #00ff00', fontWeight: 'bold',
+      fontFamily: 'sans-serif', fontSize: '14px', boxShadow: '0 4px 15px rgba(0,0,0,0.5)',
+      pointerEvents: 'none', transition: 'all 0.3s ease'
+    });
+    document.body.appendChild(floatingStatus);
+  }
+
+  // Actualizamos el texto con el porcentaje
+  floatingStatus.innerText = `⏳ Descargando: ${data.percent}%`;
+  
+  // Efecto de pulso suave mientras descarga
+  floatingStatus.style.boxShadow = `0 0 ${data.percent / 5}px rgba(0, 255, 0, 0.4)`;
+});
+
+ipcRenderer.on('download-finished', (event, data) => {
+  if (floatingStatus) {
+    if (data.state === 'completed') {
+      floatingStatus.innerText = 'Descarga Completa ✅';
+      floatingStatus.style.backgroundColor = '#00ff00';
+      floatingStatus.style.color = '#000';
+    } else {
+      floatingStatus.innerText = 'Error en la descarga ❌';
+      floatingStatus.style.borderColor = '#ff4444';
+      floatingStatus.style.color = '#ff4444';
+    }
+
+    // Desaparece solo tras 4 segundos
+    setTimeout(() => {
+      if (floatingStatus) {
+        floatingStatus.remove();
+        floatingStatus = null;
+      }
+    }, 4000);
+  }
+});
+});
