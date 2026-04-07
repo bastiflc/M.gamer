@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Descargas - Mundo Gamer Xtreme</title>
+	<link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <style>
+        body { background: #0f172a; color: white; font-family: 'Segoe UI', sans-serif; margin: 20px; }
+        h2 { border-bottom: 2px solid #7c3aed; padding-bottom: 10px; }
+        .download-item { background: #1e293b; padding: 15px; border-radius: 8px; margin-bottom: 15px; border: 1px solid #334155; transition: all 0.3s ease; }
+        .info { display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 14px; }
+        .details { display: flex; justify-content: space-between; font-size: 12px; color: #94a3b8; margin-bottom: 8px; }
+        .progress-bar { background: #334155; height: 10px; border-radius: 5px; overflow: hidden; }
+        .progress-fill { background: #7c3aed; height: 100%; width: 0%; transition: width 0.3s ease, background-color 0.5s ease; }
+        .controls { margin-top: 12px; }
+        button { background: #334155; border: none; color: white; padding: 6px 14px; border-radius: 4px; cursor: pointer; margin-right: 5px; font-size: 11px; font-weight: bold; }
+        button:hover { background: #7c3aed; }
+        
+        .status-complete { color: #22c55e; font-weight: bold; margin-top: 10px; display: flex; align-items: center; font-size: 13px; }
+        .status-error { color: #ef4444; font-weight: bold; margin-top: 10px; font-size: 13px; }
+    </style>
+</head>
+<body>
+    <h2>Mis Descargas</h2>
+    <div id="downloads-list"></div>
+
+    <script>
+        const { ipcRenderer } = require('electron');
+
+        // Función para convertir bytes a formato legible (MB o GB)
+        function formatBytes(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
+        ipcRenderer.on('update-list', (event, data) => {
+            let item = document.getElementById(`item-${data.id}`);
+            
+            if (!item) {
+                item = document.createElement('div');
+                item.id = `item-${data.id}`;
+                item.className = 'download-item';
+                document.getElementById('downloads-list').appendChild(item);
+            }
+
+            const percent = data.percent.toFixed(2);
+            const speedMB = (data.speed / (1024 * 1024)).toFixed(2);
+            const isFinished = (data.state === 'Completado' || data.state === 'completed' || data.state === 'Terminado');
+            const isCancelled = (data.state === 'Cancelado' || data.state === 'cancelled');
+
+            // Formatear pesos
+            const currentMB = formatBytes(data.receivedSize || 0);
+            const totalMB = formatBytes(data.totalSize || 0);
+
+            let footerContent = '';
+            let barColor = '#7c3aed'; 
+            let infoRightText = `${speedMB} MB/s`;
+
+            if (isFinished) {
+                barColor = '#22c55e';
+                infoRightText = 'Completado';
+                footerContent = `<div class="status-complete">✅ Descarga completa</div>`;
+            } else if (isCancelled) {
+                barColor = '#ef4444';
+                infoRightText = 'Interrumpida';
+                footerContent = `<div class="status-error">❌ Descarga cancelada</div>`;
+            } else {
+                footerContent = `
+                    <div class="controls">
+                        <button onclick="control('${data.id}', 'pause')">Pausar</button>
+                        <button onclick="control('${data.id}', 'resume')">Reanudar</button>
+                        <button onclick="control('${data.id}', 'cancel')">Cancelar</button>
+                    </div>
+                `;
+            }
+
+            item.innerHTML = `
+                <div class="info">
+                    <span><strong>${data.name || 'Archivo MundoGamer'}</strong></span>
+                    <span style="color: ${isFinished ? '#22c55e' : 'white'}">${infoRightText}</span>
+                </div>
+                <div class="details">
+                    <span>${currentMB} de ${totalMB}</span>
+                    <span>${percent}%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: ${percent}%; background-color: ${barColor}"></div>
+                </div>
+                ${footerContent}
+            `;
+        });
+
+        function control(id, action) {
+            ipcRenderer.send('manage-download', { id, action });
+        }
+    </script>
+</body>
+</html>
